@@ -1,0 +1,32 @@
+{
+	"name": "compact-pokeapi",
+	"version": "1.0.0",
+	"description": "A compact pokémon API",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodejs app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fmosbacher/compact-pokeapi.git"
+	},
+	"keywords": [
+		"Pokémon",
+		"Node.JS",
+		"Express",
+		"Mongoose"
+	],
+	"author": "Fernando Mosbacher Azevedo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/fmosbacher/compact-pokeapi/issues"
+	},
+	"homepage": "https://github.com/fmosbacher/compact-pokeapi#readme",
+	"dependencies": {
+		"express": "^4.16.2",
+		"mongodb": "^3.0.1",
+		"mongoose": "^4.13.9",
+		"multer": "^1.3.0"
+	}
+}
