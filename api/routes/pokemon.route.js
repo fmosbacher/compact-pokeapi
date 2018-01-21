@@ -3,7 +3,7 @@ var multer = require('multer')
 var pokemonCtrl = require('../controllers/pokemon.controller.js')
 
 var router = express.Router()
-var upload = multer({ dest: './api/public/uploads' })
+var upload = multer({ dest: './public/uploads' })
 
 router
 	.route('/')
