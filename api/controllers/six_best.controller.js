@@ -22,6 +22,8 @@ var pokemonSumAttributes = function(pokemons) {
 		attributesSum.stats.defense += pokemon.stats.defense || 0
 		attributesSum.stats.attack += pokemon.stats.attack || 0
 		attributesSum.stats.hp += pokemon.stats.hp || 0
+		attributesSum.weight += pokemon.weight
+		attributesSum.baseExperience += pokemon.baseExperience
 	})
 
 	return attributesSum
@@ -48,6 +50,7 @@ module.exports.sixBestFind = function(req, res) {
 
 	Pokemon
 		.find({})
+		.select('-_id')
 		.sort([[stat, 'desc']])
 		.limit(6)
 		.exec(function(err, pokemons) {
