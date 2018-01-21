@@ -3,8 +3,6 @@ var multer = require('multer')
 var fs = require('fs')
 var Pokemon = require('../data/pokemon.model.js')
 
-// FOR DEV ONLY --------------------------
-
 module.exports.pokemonDeleteAll = function(req, res) {
 	Pokemon.remove(function(err, deleteInfo) {
 		if (err) {
@@ -19,8 +17,6 @@ module.exports.pokemonDeleteAll = function(req, res) {
 	})
 }
 
-// FOR DEV ONLY --------------------------
-
 module.exports.pokemonGetAll = function(req, res) {
 	Pokemon.count(function(err, count) {
 		if (err) {
@@ -31,7 +27,8 @@ module.exports.pokemonGetAll = function(req, res) {
 		}
 		Pokemon
 			.find({})
-			.select('-_id' /* remove image!! */)
+			.select('-_id')
+			.sort([['id', 'asc']])
 			.exec(function(err, pokemons) {
 				if (err) {
 					res
@@ -61,7 +58,7 @@ module.exports.pokemonAdd = function(req, res) {
 			id: count,
 			name: req.body.name,
 			image: {
-				data: req.file ? fs.readFileSync(req.file.path) : null,
+				data: req.file ? fs.readFileSync(req.file.path) : undefined,
 				contentType: 'image/png'
 			},
 			stats: {
@@ -96,7 +93,7 @@ module.exports.pokemonGetOne = function(req, res) {
 
 	Pokemon
 		.findOne({ id: pokemonId })
-		.select('-id -image' /* remove image!! */)
+		.select('-_id')
 		.exec(function(err, pokemon) {
 		if (err) {
 			res
