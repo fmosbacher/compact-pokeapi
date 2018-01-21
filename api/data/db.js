@@ -1,5 +1,6 @@
 var mongoose = require('mongoose')
-var dbUrl = 'mongodb://localhost:27017/compact-pokeapi'
+// var dbUrl = 'mongodb://localhost:27017/compact-pokeapi'
+var dbUrl = 'mongodb://fmosbacher:123456@ds111258.mlab.com:11258/compact-pokeapi'
 
 module.exports.establishDbConnection = function() {
 	mongoose.connect(dbUrl, {
