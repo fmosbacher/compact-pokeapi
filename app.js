@@ -10,7 +10,7 @@ db.establishDbConnection()
 
 var app = express()
 
-app.set('port', 3000)
+app.set('port', process.env.PORT || 3000)
 
 // Parse requests body
 app.use(bodyParser.json())
