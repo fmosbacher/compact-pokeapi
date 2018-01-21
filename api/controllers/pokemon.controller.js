@@ -31,7 +31,7 @@ module.exports.pokemonGetAll = function(req, res) {
 		}
 		Pokemon
 			.find({})
-			.select('-id -_id -image' /* remove image!! */)
+			.select('-_id' /* remove image!! */)
 			.exec(function(err, pokemons) {
 				if (err) {
 					res
