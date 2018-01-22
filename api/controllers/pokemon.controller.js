@@ -55,24 +55,24 @@ module.exports.pokemonAdd = function(req, res) {
 			return
 		}			
 		Pokemon.create({
-			id: count,
-			name: req.body.name,
-			image: {
-				data: req.file ? fs.readFileSync(req.file.path) : undefined,
-				contentType: 'image/png'
+			'id': count,
+			'name': req.body.name,
+			'image': {
+				'data': req.file ? fs.readFileSync(req.file.path) : undefined,
+				'contentType': 'image/png'
 			},
-			stats: {
-				speed: req.body.speed,
-				specialDefense: req.body.specialDefense,
-				specialAttack: req.body.specialAttack,
-				defense: req.body.defense,
-				attack: req.body.attack,
-				hp: req.body.hp
+			'stats': {
+				'speed': req.body.speed,
+				'specialDefense': req.body.specialDefense,
+				'specialAttack': req.body.specialAttack,
+				'defense': req.body.defense,
+				'attack': req.body.attack,
+				'hp': req.body.hp
 			},
-			baseExperience: req.body.baseExperience,
-			weight: req.body.weight,
-			abilities: req.body.abilities,
-			moves: req.body.moves
+			'baseExperience': req.body.baseExperience,
+			'weight': req.body.weight,
+			'abilities': req.body.abilities,
+			'moves': req.body.moves
 		}, function(err, newPokemon) {
 			if (err) {
 				res
@@ -130,7 +130,8 @@ module.exports.pokemonUpdate = function(req, res) {
 
 		pokemon.name = req.body.name || pokemon.name
 		pokemon.image = {
-			'data': req.file ? fs.readFileSync(req.file.path) : undefined
+			'data': req.file ? fs.readFileSync(req.file.path) : undefined,
+			'contentType': 'image/png'
 		}
 		pokemon.stats = {
 			'speed': req.body.speed || pokemon.stats.speed,
