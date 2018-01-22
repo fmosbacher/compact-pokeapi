@@ -1,7 +1,7 @@
 # Six best
 ----
 
- Show pokemons and the sum of its statistics selected by a specific attribute
+ Show pokemons and the sum of its statistics selected by specific attribute
 
 ### URL: `/api/six-best/{attr}`
 
