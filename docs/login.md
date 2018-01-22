@@ -1,15 +1,14 @@
 # User login
-----
 
 Login to get the authentication Token
 
-### URL: `/api/user/login`
+#### URL: `/api/user/login`
 
-### Method: `POST`
+#### Method: `POST`
 
-### Auth requested: NO
+#### Auth requested: NO
 
-### Data constraints:
+#### Data constraints:
 
 ```javascript
 headers: {
@@ -21,11 +20,11 @@ body: {
 }
 ```
 
-### Success response
+#### Success response
 
 * Auth Token in JSON - 200 OK
 
-### Error responses
+#### Error responses
 
 * Username not found - 400 Bad Request
 

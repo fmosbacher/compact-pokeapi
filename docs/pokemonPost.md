@@ -1,15 +1,14 @@
 # Add new pokemon
-----
 
 Add a new pokemon to the API
 
-### URL: `/api/pokemon`
+#### URL: `/api/pokemon`
 
-### Method: `POST`
+#### Method: `POST`
 
-### Auth requested: YES
+#### Auth requested: YES
 
-### Data constraints:
+#### Data constraints:
 
 ```javascript
 headers: {
@@ -35,6 +34,6 @@ body: {
 }
 ```
 
-### Success response
+#### Success response
 
 * The added pokemon - 201 Created

@@ -1,13 +1,12 @@
 # Remove pokemon
-----
 
 Remove one pokemon searching by its ID
 
-### URL: `/api/pokemon/{id}`
+#### URL: `/api/pokemon/{id}`
 
-### Method: `DELETE`
+#### Method: `DELETE`
 
-### Auth requested: YES
+#### Auth requested: YES
 
 ```javascript
 headers: {
@@ -15,6 +14,6 @@ headers: {
 }
 ```
 
-### Success response
+#### Success response
 
 * Message and delete information - 200 OK

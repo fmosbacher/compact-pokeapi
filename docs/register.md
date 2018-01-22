@@ -1,15 +1,14 @@
 # User register
-----
 
 Register an user to login and manipulate the API
 
-### URL: `/api/user/register`
+#### URL: `/api/user/register`
 
-### Method: `POST`
+#### Method: `POST`
 
-### Auth requested: YES
+#### Auth requested: YES
 
-### Data constraints:
+#### Data constraints:
 
 ```javascript
 headers: {
@@ -23,6 +22,6 @@ body: {
 }
 ```
 
-### Success response
+#### Success response
 
 * The added user - 201 Created

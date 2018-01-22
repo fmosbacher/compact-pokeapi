@@ -1,15 +1,14 @@
 # Update all pokemon data
-----
 
 Update all attributes of a pokemon
 
-### URL: `/api/pokemon/{id}`
+#### URL: `/api/pokemon/{id}`
 
-### Method: `PUT`
+#### Method: `PUT`
 
-### Auth requested: YES
+#### Auth requested: YES
 
-### Data constraints:
+#### Data constraints:
 
 ```javascript
 headers: {
@@ -35,6 +34,6 @@ body: {
 }
 ```
 
-### Success response
+#### Success response
 
 * Updated pokemon - 200 OK

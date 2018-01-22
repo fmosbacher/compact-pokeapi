@@ -1,15 +1,15 @@
 # Remove all pokemons
-----
+
 
 Remove all pokemons stored in the database
 
-### URL: `/api/pokemon`
+#### URL: `/api/pokemon`
 
-### Method: `DELETE`
+#### Method: `DELETE`
 
-### Auth requested: YES
+#### Auth requested: YES
 
-### Data constraints:
+#### Data constraints:
 
 ```javascript
 headers: {
@@ -17,6 +17,6 @@ headers: {
 }
 ```
 
-### Success response
+#### Success response
 
 * Message and delete information - 200 OK
