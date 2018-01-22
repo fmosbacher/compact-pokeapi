@@ -4,6 +4,7 @@ var db = require('./api/data/db.js')
 var indexRoute = require('./api/routes/index.js')
 var pokemonRoutes = require('./api/routes/pokemon.route.js')
 var sixBestRoutes = require('./api/routes/six_best.route.js')
+var userRoutes = require('./api/routes/user.route.js')
 
 // Connect to mongoDB
 db.establishDbConnection()
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/', indexRoute)
 app.use('/api/pokemon', pokemonRoutes)
 app.use('/api/six-best', sixBestRoutes)
+app.use('/api/user', userRoutes)
 
 var server = app.listen(app.get('port'), function() {
     var port = server.address().port
