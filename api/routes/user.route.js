@@ -4,7 +4,7 @@ var userCtrl = require('../controllers/user.controller.js')
 var router = express.Router()
 
 router
-	.route('/register')
+	.route(userCtrl.userAuthenticate, '/register')
 	.post(userCtrl.userRegister)
 
 router

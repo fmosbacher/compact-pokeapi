@@ -11,7 +11,7 @@ module.exports.userRegister = function(req, res) {
 	}, function(err, user) {
 		if (err) {
 			res
-				.status(400)
+				.status(500)
 				.json(err)
 		} else {
 			res
@@ -28,7 +28,7 @@ module.exports.userLogin = function(req, res) {
 			console.log('User found: ' + user)
 			if (err) {
 				res
-					.status(400)
+					.status(500)
 					.json(err)
 			} else if (user == undefined) {
 				res

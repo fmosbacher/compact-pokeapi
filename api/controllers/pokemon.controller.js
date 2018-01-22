@@ -83,7 +83,6 @@ module.exports.pokemonAdd = function(req, res) {
 			res
 				.status(201)
 				.json(newPokemon)
-			console.log('Pokemon created successfully')
 		})
 	})
 }
