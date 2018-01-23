@@ -12,7 +12,7 @@ Remove all pokemons stored in the database
 
 ```javascript
 headers: {
-	"Authentication": "Bearer [Token]"
+	"Authorization": "Bearer [Token]"
 }
 ```
 

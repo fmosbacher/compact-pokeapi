@@ -10,7 +10,7 @@ Remove one pokemon searching by its ID
 
 ```javascript
 headers: {
-	"Authentication": "Bearer [Token]"
+	"Authorization": "Bearer [Token]"
 }
 ```
 

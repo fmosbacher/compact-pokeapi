@@ -13,7 +13,7 @@ Add a new pokemon to the API
 ```javascript
 headers: {
 	"Content-Type": "multipart/form-data"
-	"Authentication": "Bearer [Token]"
+	"Authorization": "Bearer [Token]"
 },
 body: {
 	"id": "[Number]",

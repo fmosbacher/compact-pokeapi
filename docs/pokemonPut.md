@@ -13,7 +13,7 @@ Update all attributes of a pokemon
 ```javascript
 headers: {
 	"Content-Type": "multipart/form-data"
-	"Authentication": "Bearer [Token]"
+	"Authorization": "Bearer [Token]"
 },
 body: {
 	"id": "[Number]",

@@ -15,7 +15,7 @@ Array of attributes in the request body
 ```javascript
 headers: {
 	"Content-Type": "multipart/form-data"
-	"Authentication": "Bearer [Token]"
+	"Authorization": "Bearer [Token]"
 },
 body: {
 	"[attribute]": "[value]"
