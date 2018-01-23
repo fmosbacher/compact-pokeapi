@@ -1,6 +1,5 @@
 # Remove all pokemons
 
-
 Remove all pokemons stored in the database
 
 #### URL: `/api/pokemon`

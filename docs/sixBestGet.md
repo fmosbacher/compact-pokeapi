@@ -4,7 +4,7 @@
 
 #### URL: `/api/six-best/{attr}`
 
-#### Method: `POST`
+#### Method: `GET`
 
 #### Auth requested: NO
 

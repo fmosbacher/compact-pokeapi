@@ -1,4 +1,4 @@
-# Show one pokemon found by its ID
+# Show one specific pokemon
 
 Get information about a pokemon searching by its ID
 

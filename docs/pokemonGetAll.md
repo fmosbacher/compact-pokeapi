@@ -2,7 +2,7 @@
 
 Get the total number of pokemons and its informations
 
-#### URL: `/api/user/pokemon`
+#### URL: `/api/pokemon`
 
 #### Method: `GET`
 
